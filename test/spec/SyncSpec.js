@@ -28,7 +28,8 @@ var store = new Lawnchair({
 
       runs(function() {
         store.sync({
-          url: 'test-data/test-1.json'
+          url: 'test/test-data/test-1.json',
+          store: store
         }, function(data) {
           sync_data = data;
           flag = true;
@@ -49,8 +50,9 @@ var store = new Lawnchair({
 
       runs(function() {
         store.sync({
-          url: 'test-data/test-2.json',
-          force: true
+          url: 'test/test-data/test-2.json',
+          force: true,
+          store: store
         }, function(data) {
           sync_data = data;
           flag = true;
@@ -71,8 +73,9 @@ var store = new Lawnchair({
 
       runs(function() {
         store.sync({
-          url: 'test-data/test-3.json',
-          force: true
+          url: 'test/test-data/test-3.json',
+          force: true,
+          store: store
         }, function(data) {
           sync_data = data;
           flag = true;
@@ -115,7 +118,7 @@ var store = new Lawnchair({
 
       runs(function() {
         store.sync({
-          url: 'test-data/github-events.json',
+          url: 'test/test-data/github-events.json',
           callback: {
             prestore: function(data) {
               for(var i in data) {
@@ -127,7 +130,8 @@ var store = new Lawnchair({
 
               return data;
             }
-          }
+          },
+          store: store
         }, function(data) {
           sync_data = data;
         });
@@ -144,7 +148,7 @@ var store = new Lawnchair({
             repo = typeof sync_data[0].value.repo,
             created_at = typeof sync_data[0].value.created_at,
             id = typeof sync_data[0].value.id,
-            public_flag = typeof sync_data[0].value['public'];
+            public_flag = typeof sync_data[0].value.public;
 
         expect(actor).toBe('undefined');
         expect(org).toBe('undefined');

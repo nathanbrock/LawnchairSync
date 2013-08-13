@@ -1,1 +1,5 @@
 .DS_Store
+.grunt
+node_modules
+_SpecRunner.html
+npm-debug.log

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Lawnchair Sync - A Github Stars Example</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <!-- Header and Nav -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Github Stars <span>A small Lawnchair Sync example</span></h1>
+
+      <div class="panel">
+      <p>
+        Enter your github username and press the 'Sync Stars' button to pull the latest 30 starred repositories.
+        Refresh the page and find your star listings safe and sound, synced up to your localstorage without having 
+        to dash back off to the Github API.
+      </p>
+    </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="small-8 columns no-pad-right">
+      <input type="text" id="github-username" placeholder="your github username" />
+    </div>
+    <div class="small-2 columns no-padding">
+      <a href="#" class="button prefix sync-stars">
+        Sync Stars!
+      </a>
+    </div>
+    <div class="small-2 columns no-pad-left">
+      <a href="#" class="button alert prefix nuke-stars">
+        Nuke Local Store
+      </a>
+    </div>
+  </div>
+  
+  <!-- End Header and Nav -->
+  
+  <div class="row">    
+
+    <div class="large-12 columns">
+
+      <table class="column stars-table">
+        <thead>
+          <tr>
+            <th>Repo Name</th>
+            <th>Repo URI</th>
+            <th>Repo Owner</th>
+            <th>Watchers</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+    </div>
+    
+  </div>
+  
+  <!-- Footer -->
+  
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="http://brian.io/lawnchair/">Lawnchair</a></li>
+            <li><a href="https://github.com/nbrock/LawnchairSync">Lawnchair Sync</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="lib/lawnchair/lawnchair-0.6.1.min.js"></script>
+  <script src="lib/src/lawnchair-sync-0.1.0.js"></script>
+  <script src="lib/example.dev.js"></script>
+</body>
+</html>
+

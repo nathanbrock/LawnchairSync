@@ -1,3 +1,33 @@
 /* Lawnchair Sync Examples - Github Stars */
 
+@media only screen and (max-width: 800px) {
+	table td:nth-child(2), 
+	table th:nth-child(2) {display: none;}
+}
+ 
+@media only screen and (max-width: 640px) {
+	table td:nth-child(4),
+	table th:nth-child(4),
+	table td:nth-child(7),
+	table th:nth-child(7),
+	table td:nth-child(8),
+	table th:nth-child(8){display: none;}
+	h1 > span {display: block;}
+}
 
+h1 > span {
+	font-size: 0.5em;
+	font-weight: normal;
+}
+
+.no-padding {
+	padding: 0
+}
+
+.no-pad-left {
+	padding-left: 0;
+}
+
+.no-pad-right {
+	padding-right: 0;
+}

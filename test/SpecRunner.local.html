@@ -4,6 +4,18 @@
 <head>
   <title>Jasmine Spec Runner</title>
 
+  <!--
+
+    USAGE
+
+    The Specs have paths related to the grunt task runner so runnig this file from your browser won't
+    work. If you want to run this file from your browser then change any sync urls from
+      url: 'test/test-data/test-1.json',
+    to
+      url: 'test-data/test-1.json',
+
+  -->
+
   <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.3.1/jasmine_favicon.png">
   <link rel="stylesheet" type="text/css" href="lib/jasmine-1.3.1/jasmine.css">
   <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine.js"></script>
@@ -12,7 +24,7 @@
   <!-- include source files here... -->
   <script type="text/javascript" src="lib/lawnchair/lawnchair-0.6.1.min.js"></script>
   <script type="text/javascript" src="lib/jquery/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="../src/lawnchair-sync.js"></script>
+  <script type="text/javascript" src="../src/lawnchair-sync.dev.js"></script>
 
   <!-- include spec files here... -->
   <script type="text/javascript" src="spec/syncSpec.js"></script>

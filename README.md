@@ -1,8 +1,7 @@
 # Lawnchair Sync
+** v0.1.0 **
 
-Lawnchair sync takes your lawnchair and synchronizes it with your JSON feed of choice.
-
-*This be a work in progress*
+Lawnchair sync takes your Lawnchair and synchronises it with your JSON feed of choice.
 
 ## Requirements
 
@@ -14,7 +13,8 @@ Lawnchair sync takes your lawnchair and synchronizes it with your JSON feed of c
 	var store = new Lawnchair({name:'json-feed'}, function() {
     	this.sync({
 			url: 'http://www.domain.com/feed.json',
-			ttl: 60
+			ttl: 60,
+			store: store
     	}, function(data) {
 			console.log(data);
     	});
@@ -29,13 +29,3 @@ Lawnchair sync takes your lawnchair and synchronizes it with your JSON feed of c
 - ajax - options used during use of the jQuery ajax method.
 - callback
 	- prestore - Make adjustments to the data before saving. *Default: false*
-	
-## Examples
-
-In progress.
-
-## Testing
-
-The lovely Jasmine is used to test the Lawnchair Sync lib. During the tests a number of JSON files are requested. This may well throw errors as resources fail to load and issues concerning 'Access-Control-Allow-Origin'. To test the lib, move to the root of the repo and enter the command below to run a simple web server for the purposes of testing.
-
-	python -m SimpleHTTPServer

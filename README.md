@@ -1,5 +1,5 @@
 # Lawnchair Sync
-** v0.1.0 **
+**v0.1.0**
 
 Lawnchair sync takes your Lawnchair and synchronises it with your JSON feed of choice.
 
@@ -7,6 +7,11 @@ Lawnchair sync takes your Lawnchair and synchronises it with your JSON feed of c
 
 - [Lawnchair](http://brian.io/lawnchair/)
 - [jQuery](http://jquery.com/)
+
+## Demo
+
+You can find a demo of Lawnchair Sync in the form of a Github stars viewer at [http://nbrock.github.io/LawnchairSync/](http://nbrock.github.io/LawnchairSync/)
+
 
 ## Usages
 

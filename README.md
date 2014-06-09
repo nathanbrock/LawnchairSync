@@ -1,6 +1,8 @@
 # Lawnchair Sync
 **v0.1.0**
 
+[![Build Status](https://travis-ci.org/nbrock/LawnchairSync.png?branch=master)](https://travis-ci.org/nbrock/LawnchairSync)
+
 Lawnchair sync takes your Lawnchair and synchronises it with your JSON feed of choice.
 
 ## Requirements

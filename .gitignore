@@ -1,5 +1,10 @@
+# OS Specific
 .DS_Store
+
+# Grunt build temp files
 .grunt
-node_modules
 _SpecRunner.html
+
+# Node
+node_modules
 npm-debug.log
